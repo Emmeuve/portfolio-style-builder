@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 
 interface Project {
+  id: string;
   name: string;
   year: string;
   category: string;
@@ -8,16 +11,16 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { name: "NORDIC BRANDS", year: "2025-", category: "IDENTITY", active: true },
-  { name: "ARTISAN COFFEE CO", year: "2024-2025", category: "BRANDING", active: true },
-  { name: "MINIMAL STUDIOS", year: "2024-", category: "DIGITAL", active: true },
-  { name: "ECHO MAGAZINE", year: "2023-2024", category: "EDITORIAL", active: false },
-  { name: "HERITAGE WATCHES", year: "2023-", category: "IDENTITY", active: true },
-  { name: "BLOOM SKINCARE", year: "2023", category: "PACKAGING", active: false },
-  { name: "URBAN ARCHITECTS", year: "2022-2023", category: "BRANDING", active: true },
-  { name: "SOUND COLLECTIVE", year: "2022-", category: "DIGITAL", active: true },
-  { name: "TERRA WINES", year: "2021-2022", category: "IDENTITY", active: false },
-  { name: "MODERN GALLERY", year: "2021-", category: "ART DIRECTION", active: true },
+  { id: "nordic-brands", name: "NORDIC BRANDS", year: "2025-", category: "IDENTITY", active: true },
+  { id: "artisan-coffee-co", name: "ARTISAN COFFEE CO", year: "2024-2025", category: "BRANDING", active: true },
+  { id: "minimal-studios", name: "MINIMAL STUDIOS", year: "2024-", category: "DIGITAL", active: true },
+  { id: "echo-magazine", name: "ECHO MAGAZINE", year: "2023-2024", category: "EDITORIAL", active: false },
+  { id: "heritage-watches", name: "HERITAGE WATCHES", year: "2023-", category: "IDENTITY", active: true },
+  { id: "bloom-skincare", name: "BLOOM SKINCARE", year: "2023", category: "PACKAGING", active: false },
+  { id: "urban-architects", name: "URBAN ARCHITECTS", year: "2022-2023", category: "BRANDING", active: true },
+  { id: "sound-collective", name: "SOUND COLLECTIVE", year: "2022-", category: "DIGITAL", active: true },
+  { id: "terra-wines", name: "TERRA WINES", year: "2021-2022", category: "IDENTITY", active: false },
+  { id: "modern-gallery", name: "MODERN GALLERY", year: "2021-", category: "ART DIRECTION", active: true },
 ];
 
 const ProjectList = () => {
@@ -35,8 +38,9 @@ const ProjectList = () => {
 
         <div className="space-y-0">
           {projects.map((project, index) => (
-            <div
+            <Link
               key={index}
+              to={`/project/${project.id}`}
               className={`grid grid-cols-12 gap-4 py-4 border-t border-border cursor-pointer group ${
                 hoveredIndex !== null && hoveredIndex !== index
                   ? "text-muted-foreground"
@@ -45,7 +49,7 @@ const ProjectList = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="col-span-6 md:col-span-5">
+              <div className="col-span-6 md:col-span-5 flex items-center gap-3">
                 <span
                   className={`text-sm md:text-base uppercase tracking-wide transition-all duration-300 ${
                     project.active ? "font-bold" : "font-normal"
@@ -53,6 +57,11 @@ const ProjectList = () => {
                 >
                   {project.name}
                 </span>
+                <ArrowUpRight 
+                  className={`w-4 h-4 transition-all duration-300 ${
+                    hoveredIndex === index ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-2"
+                  }`}
+                />
               </div>
               <div className="col-span-3 md:col-span-4 hidden md:block">
                 <span className="text-sm uppercase tracking-wide text-muted-foreground group-hover:text-foreground transition-colors">
@@ -64,7 +73,7 @@ const ProjectList = () => {
                   {project.year}
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
           <div className="border-t border-border"></div>
         </div>
