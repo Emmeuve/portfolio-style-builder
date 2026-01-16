@@ -112,4 +112,8 @@ Link del Proyecto: [https://github.com/Emmeuve/portfolio-style-builder](https://
 
 ---
 
+<<<<<<< HEAD
 ⭐️ Si te gusta este proyecto, considera darle una estrella en GitHub
+=======
+⭐️ Si te gusta este proyecto, considera darle una estrella en GitHub
+>>>>>>> 2ea1e4dafb5e126ae718325f1eda750ae2ea1077
