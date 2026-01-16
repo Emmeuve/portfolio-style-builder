@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -25,7 +26,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-background/80 backdrop-blur-sm">
       <div className="flex items-start justify-between text-xs uppercase tracking-wider">
         <div className="space-y-1">
-          <p className="font-bold">STUDIO NAME</p>
+          <Link to="/" className="font-bold hover:text-muted-foreground transition-colors">STUDIO NAME</Link>
           <p className="text-muted-foreground">DESIGN & BRANDING</p>
           <p className="text-muted-foreground">
             {formatDay(currentTime)} {formatTime(currentTime)}
@@ -45,12 +46,12 @@ const Header = () => {
         </nav>
 
         <div className="text-right space-y-1">
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="font-bold hover:text-muted-foreground transition-colors block"
           >
             CONTACT
-          </a>
+          </Link>
           <p className="text-muted-foreground">AVAILABLE FOR PROJECTS</p>
         </div>
       </div>
