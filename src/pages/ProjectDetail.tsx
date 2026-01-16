@@ -7,6 +7,7 @@ interface ProjectData {
   year: string;
   category: string;
   client: string;
+  brief: string;
   description: string;
   challenge: string;
   solution: string;
@@ -21,6 +22,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2025-",
     category: "Identity",
     client: "Nordic Brands Group",
+    brief: "",
     description: "A comprehensive brand identity system for a Scandinavian holding company managing multiple lifestyle brands across furniture, fashion, and home goods.",
     challenge: "Create a cohesive visual identity that could serve as an umbrella brand while allowing individual sub-brands to maintain their unique character.",
     solution: "We developed a flexible identity system based on Nordic minimalism—clean typography, restrained color palette, and a modular logo system that adapts across contexts while maintaining brand recognition.",
@@ -45,6 +47,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2024-2025",
     category: "Branding",
     client: "Artisan Coffee Company",
+    brief: "",
     description: "Complete brand refresh for a specialty coffee roaster expanding from local cafés to national retail distribution.",
     challenge: "Transition from a beloved local brand to a retail-ready product without losing the artisanal authenticity that built their loyal customer base.",
     solution: "We preserved the handcrafted feel through custom illustrations and tactile packaging materials while introducing a refined typographic system and color palette suitable for retail environments.",
@@ -69,6 +72,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2024-",
     category: "Digital",
     client: "Minimal Studios",
+    brief: "",
     description: "A digital-first brand identity and website for a contemporary architecture and interior design studio based in Copenhagen.",
     challenge: "Create a digital presence that showcases their work without overshadowing it, while establishing them as leaders in minimalist design.",
     solution: "We crafted an ultra-clean website with generous white space, subtle micro-interactions, and a content-first approach that lets their architectural work speak for itself.",
@@ -93,6 +97,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2023-2024",
     category: "Editorial",
     client: "Echo Publishing",
+    brief: "",
     description: "Complete editorial redesign for a culture and lifestyle magazine, bridging print heritage with digital innovation.",
     challenge: "Revitalize a legacy publication for modern audiences while honoring its 30-year editorial history and maintaining subscriber loyalty.",
     solution: "We developed a dynamic grid system and typographic hierarchy that feels fresh yet timeless, with seamless transitions between print and digital reading experiences.",
@@ -117,6 +122,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2023-",
     category: "Identity",
     client: "Heritage Watch Company",
+    brief: "",
     description: "Brand identity and visual language for a Swiss watchmaker combining centuries of craftsmanship with contemporary design sensibilities.",
     challenge: "Position a new luxury watch brand in a crowded market while communicating both heritage craftsmanship and modern innovation.",
     solution: "We created an identity rooted in precision and timelessness—geometric logomark, refined serif typography, and a restrained color palette that speaks to connoisseurs.",
@@ -141,6 +147,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2023",
     category: "Packaging",
     client: "Bloom Beauty",
+    brief: "",
     description: "Sustainable packaging design for an organic skincare line focused on natural ingredients and environmental responsibility.",
     challenge: "Design packaging that communicates luxury and efficacy while using 100% sustainable materials and minimizing environmental impact.",
     solution: "We developed refillable glass containers with minimal branding, seed-paper labels, and compostable secondary packaging that elevates the unboxing experience.",
@@ -165,6 +172,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2022-2023",
     category: "Branding",
     client: "Urban Architecture Group",
+    brief: "",
     description: "Complete rebrand for an award-winning architecture firm specializing in sustainable urban development and public spaces.",
     challenge: "Reflect their evolution from residential architecture to large-scale urban planning while maintaining approachability and human-centered values.",
     solution: "We created a bold, structural identity with a dynamic logo system inspired by city grids, paired with warm photography and accessible communication.",
@@ -189,6 +197,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2022-",
     category: "Digital",
     client: "Sound Collective Records",
+    brief: "",
     description: "Digital platform and brand identity for an independent record label championing experimental and electronic music.",
     challenge: "Create a distinctive visual identity that captures the energy of their roster while building a functional platform for music discovery and artist promotion.",
     solution: "We designed a vibrant, modular identity with generative visual elements that respond to audio, paired with an immersive web experience showcasing artists and releases.",
@@ -213,6 +222,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2021-2022",
     category: "Identity",
     client: "Terra Vineyards",
+    brief: "",
     description: "Brand identity and packaging for a family-owned winery transitioning from bulk production to premium direct-to-consumer sales.",
     challenge: "Establish a premium positioning while honoring four generations of winemaking tradition and their deep connection to the land.",
     solution: "We developed an earthy, sophisticated identity featuring custom typography, hand-drawn vineyard illustrations, and tactile label materials that tell their story.",
@@ -237,6 +247,7 @@ const projectsData: Record<string, ProjectData> = {
     year: "2021-",
     category: "Art Direction",
     client: "Modern Gallery NYC",
+    brief: "",
     description: "Visual identity and exhibition design for a contemporary art gallery in New York's Chelsea district.",
     challenge: "Create a flexible identity system that elevates diverse artists without imposing a singular aesthetic, while establishing gallery recognition.",
     solution: "We designed a minimal, typographic identity with a variable grid system that adapts to each exhibition while maintaining cohesive wayfinding and communications.",
@@ -321,6 +332,17 @@ const ProjectDetail = () => {
           </div>
         </div>
       </section>
+
+      {/* Brief / Project Introduction */}
+      {project.brief && (
+        <section className="px-6 pb-16">
+          <div className="max-w-4xl mx-auto">
+            <p className="font-serif text-2xl md:text-3xl lg:text-4xl leading-relaxed italic text-foreground/90">
+              {project.brief}
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* Asymmetric Gallery */}
       <section className="px-6 pb-24">
