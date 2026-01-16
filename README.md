@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
+# 🎨 Portfolio Style Builder
 
-## Project info
+> Mi próximo proyecto de portfolio personal - Una plataforma interactiva para explorar y personalizar estilos de diseño
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+[![Desplegado en Vercel](https://img.shields.io/badge/Desplegado-Vercel-black?style=flat&logo=vercel)](https://portfolio-six-omega-51.vercel.app)
+[![Construido con React](https://img.shields.io/badge/React-18-blue?style=flat&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38bdf8?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 
-## How can I edit this code?
+## 🚀 Acerca del Proyecto
 
-There are several ways of editing your application.
+Portfolio Style Builder es mi siguiente iteración de portfolio personal, diseñado para mostrar mis habilidades como desarrollador mientras ofrece una experiencia interactiva donde los visitantes pueden explorar diferentes estilos visuales y temas de diseño.
 
-**Use Lovable**
+### ✨ Características Principales
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **🎭 Personalización en Tiempo Real**: Experimenta con diferentes paletas de colores y estilos
+- **📱 Diseño Responsivo**: Optimizado para todos los dispositivos
+- **⚡ Alto Rendimiento**: Construido con Vite para una carga ultra rápida
+- **🎨 Componentes Modernos**: Utilizando shadcn/ui para una UI elegante y accesible
+- **🌗 Modo Oscuro/Claro**: Soporte completo para temas
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Stack Tecnológico
 
-**Use your preferred IDE**
+Este proyecto está construido con tecnologías modernas y potentes:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend Framework**: React 18
+- **Lenguaje**: TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Componentes UI**: shadcn/ui
+- **Deployment**: Vercel
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📦 Instalación y Configuración
 
-Follow these steps:
+### Prerrequisitos
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js 18+ y npm/bun instalados ([Instalar con nvm](https://github.com/nvm-sh/nvm))
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Instalación Local
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Clonar el repositorio
+git clone https://github.com/Emmeuve/portfolio-style-builder.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Navegar al directorio
+cd portfolio-style-builder
+
+# Instalar dependencias (con npm)
+npm install
+
+# O con bun (recomendado)
+bun install
+
+# Iniciar servidor de desarrollo
 npm run dev
+# o
+bun run dev
 ```
 
-**Edit a file directly in GitHub**
+El proyecto estará disponible en `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎯 Scripts Disponibles
 
-**Use GitHub Codespaces**
+```bash
+npm run dev          # Inicia el servidor de desarrollo
+npm run build        # Construye para producción
+npm run preview      # Vista previa del build de producción
+npm run lint         # Ejecuta el linter
+npm run test         # Ejecuta los tests con Vitest
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌐 Demo en Vivo
 
-## What technologies are used for this project?
+Visita el proyecto desplegado: [portfolio-six-omega-51.vercel.app](https://portfolio-six-omega-51.vercel.app)
 
-This project is built with:
+## 📝 Desarrollo
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Este proyecto fue inicialmente creado con [Lovable](https://lovable.dev) y está en continua evolución. Cada iteración incorpora nuevas características y mejoras basadas en las últimas tendencias de diseño y desarrollo web.
 
-## How can I deploy this project?
+### Estructura del Proyecto
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+```
+portfolio-style-builder/
+├── public/           # Archivos estáticos
+├── src/
+│   ├── components/   # Componentes React
+│   ├── lib/          # Utilidades y configuraciones
+│   └── App.tsx       # Componente principal
+├── index.html
+└── vite.config.ts    # Configuración de Vite
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 🤝 Contribuciones
 
-Yes, you can!
+Este es un proyecto personal, pero las sugerencias y feedback son siempre bienvenidos. Siéntete libre de:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Hacer fork del proyecto
+2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit de tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abrir un Pull Request
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📄 Licencia
+
+Este proyecto está bajo una licencia personal. Si deseas usar parte del código, por favor contacta conmigo.
+
+## 📬 Contacto
+
+Emmanuel - [@Emmeuve](https://github.com/Emmeuve)
+
+Link del Proyecto: [https://github.com/Emmeuve/portfolio-style-builder](https://github.com/Emmeuve/portfolio-style-builder)
+
+---
+
+⭐️ Si te gusta este proyecto, considera darle una estrella en GitHub
