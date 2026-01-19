@@ -7,63 +7,66 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-1">
             <p className="font-bold text-sm uppercase tracking-wider mb-4">
-              Studio Name
+              Estudio Emmeuve
             </p>
             <p className="text-xs uppercase tracking-wider text-muted-foreground">
-              Design & Branding
+              Diseño & Branding
               <br />
-              New York + Remote
+              Buenos Aires, Argentina
             </p>
           </div>
 
           <div>
             <p className="text-xs uppercase tracking-wider text-muted-foreground mb-4">
-              New Business
+              Contacto
             </p>
             <a
-              href="mailto:hello@studio.com"
+              href="mailto:hola@estudioemmeuve.com"
               className="text-sm uppercase tracking-wide hover:text-muted-foreground transition-colors"
             >
-              hello@studio.com
+              hola@estudioemmeuve.com
             </a>
           </div>
 
           <div>
             <p className="text-xs uppercase tracking-wider text-muted-foreground mb-4">
-              Follow
+              Redes
             </p>
             <div className="space-y-2">
               <a
-                href="#"
+                href="https://instagram.com/estudioemmeuve"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm uppercase tracking-wide hover:text-muted-foreground transition-colors block"
               >
                 Instagram
               </a>
               <a
-                href="#"
+                href="https://linkedin.com/company/estudioemmeuve"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm uppercase tracking-wide hover:text-muted-foreground transition-colors block"
               >
                 LinkedIn
               </a>
               <a
-                href="#"
+                href="https://behance.net/estudioemmeuve"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-sm uppercase tracking-wide hover:text-muted-foreground transition-colors block"
               >
-                Dribbble
+                Behance
               </a>
             </div>
           </div>
 
           <div>
             <p className="text-xs uppercase tracking-wider text-muted-foreground mb-4">
-              Settings
+              Legal
             </p>
             <div className="space-y-2">
               <button className="text-sm uppercase tracking-wide hover:text-muted-foreground transition-colors block text-left">
-                Dark Mode: Off
-              </button>
-              <button className="text-sm uppercase tracking-wide hover:text-muted-foreground transition-colors block text-left">
-                Privacy Policy
+                Política de Privacidad
               </button>
             </div>
           </div>
@@ -71,10 +74,10 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between pt-8 border-t border-border">
           <p className="text-xs uppercase tracking-wider text-muted-foreground">
-            © {currentYear} Studio Name. All rights reserved.
+            © {currentYear} Estudio Emmeuve. Todos los derechos reservados.
           </p>
           <p className="text-xs uppercase tracking-wider text-muted-foreground mt-4 md:mt-0">
-            Available for new projects
+            Disponible para nuevos proyectos
           </p>
         </div>
       </div>

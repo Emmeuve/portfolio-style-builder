@@ -226,10 +226,10 @@ const Contact = () => {
                   Email
                 </p>
                 <a
-                  href="mailto:hello@studioname.com"
+                  href="mailto:hola@estudioemmeuve.com"
                   className="text-2xl md:text-3xl hover:text-muted-foreground transition-colors duration-300"
                 >
-                  hello@studioname.com
+                  hola@estudioemmeuve.com
                 </a>
               </motion.div>
 

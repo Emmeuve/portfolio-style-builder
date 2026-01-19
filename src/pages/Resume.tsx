@@ -48,36 +48,36 @@ interface EducationItem {
 const experienceData: ExperienceItem[] = [
   {
     id: "1",
-    role: "Senior Designer",
-    company: "Design Studio Co.",
+    role: "Diseñador Senior",
+    company: "Estudio Emmeuve",
     location: "Buenos Aires, Argentina",
-    period: "2022 — Present",
-    description: "Leading brand identity projects for international clients, managing design teams and client relationships.",
+    period: "2022 — Presente",
+    description: "Liderando proyectos de identidad de marca para clientes internacionales, gestionando equipos de diseño y relaciones con clientes.",
     achievements: [
-      "Led rebranding for 15+ companies",
-      "Managed team of 5 designers",
-      "Increased client retention by 40%",
+      "Lideré rebranding para más de 15 empresas",
+      "Gestión de equipo de 5 diseñadores",
+      "Aumento de retención de clientes en 40%",
     ],
   },
   {
     id: "2",
-    role: "Brand Designer",
-    company: "Creative Agency",
+    role: "Diseñador de Marca",
+    company: "Agencia Creativa",
     location: "Buenos Aires, Argentina",
     period: "2019 — 2022",
-    description: "Developed visual identities, marketing materials, and digital experiences for diverse industries.",
+    description: "Desarrollo de identidades visuales, materiales de marketing y experiencias digitales para diversas industrias.",
     achievements: [
-      "Created 50+ brand identities",
-      "Won 3 industry awards",
+      "Creación de más de 50 identidades de marca",
+      "3 premios de la industria",
     ],
   },
   {
     id: "3",
-    role: "Junior Designer",
+    role: "Diseñador Junior",
     company: "Startup Hub",
     location: "Buenos Aires, Argentina",
     period: "2017 — 2019",
-    description: "Supported senior designers in creating brand assets and marketing collateral for tech startups.",
+    description: "Apoyo a diseñadores senior en la creación de activos de marca y material de marketing para startups tecnológicas.",
   },
 ];
 
@@ -85,34 +85,34 @@ const experienceData: ExperienceItem[] = [
 const educationData: EducationItem[] = [
   {
     id: "1",
-    degree: "Master in Brand Strategy",
+    degree: "Maestría en Estrategia de Marca",
     institution: "Universidad de Buenos Aires",
     location: "Buenos Aires, Argentina",
     period: "2020 — 2022",
-    description: "Specialized in strategic brand development and consumer behavior.",
+    description: "Especialización en desarrollo estratégico de marca y comportamiento del consumidor.",
   },
   {
     id: "2",
-    degree: "Bachelor in Graphic Design",
+    degree: "Licenciatura en Diseño Gráfico",
     institution: "Universidad de Palermo",
     location: "Buenos Aires, Argentina",
     period: "2013 — 2017",
-    description: "Focus on visual communication and digital design.",
+    description: "Enfoque en comunicación visual y diseño digital.",
   },
 ];
 
 // Skills y competencias - editar aquí
 const skills = [
-  "Brand Strategy",
-  "Visual Identity",
-  "Typography",
-  "UI/UX Design",
-  "Art Direction",
+  "Estrategia de Marca",
+  "Identidad Visual",
+  "Tipografía",
+  "Diseño UI/UX",
+  "Dirección de Arte",
   "Motion Graphics",
   "Adobe Creative Suite",
   "Figma",
-  "Web Design",
-  "Print Design",
+  "Diseño Web",
+  "Diseño Editorial",
 ];
 
 const Resume = () => {
@@ -131,9 +131,9 @@ const Resume = () => {
             className="flex items-center gap-2 text-xs uppercase tracking-wider hover:text-muted-foreground transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back
+            Volver
           </Link>
-          <p className="text-xs uppercase tracking-wider font-bold">Resume / CV</p>
+          <p className="text-xs uppercase tracking-wider font-bold">Currículum</p>
           <div className="w-16" />
         </div>
       </motion.header>
@@ -152,7 +152,7 @@ const Resume = () => {
               className="font-serif text-6xl md:text-8xl lg:text-9xl italic mb-8"
               variants={fadeInUp}
             >
-              Curriculum
+              Currículum
               <br />
               Vitae
             </motion.h1>
@@ -160,8 +160,8 @@ const Resume = () => {
               className="text-muted-foreground text-lg max-w-xl"
               variants={fadeInUp}
             >
-              A summary of my professional experience, education, and skills
-              in design and branding.
+              Un resumen de mi experiencia profesional, formación académica y
+              habilidades en diseño y branding.
             </motion.p>
           </motion.div>
 
@@ -179,7 +179,7 @@ const Resume = () => {
             >
               <Briefcase className="w-5 h-5" />
               <h2 className="text-xs uppercase tracking-wider font-bold">
-                Work Experience
+                Experiencia Laboral
               </h2>
             </motion.div>
 
@@ -249,7 +249,7 @@ const Resume = () => {
             >
               <GraduationCap className="w-5 h-5" />
               <h2 className="text-xs uppercase tracking-wider font-bold">
-                Education
+                Formación Académica
               </h2>
             </motion.div>
 
@@ -305,7 +305,7 @@ const Resume = () => {
             >
               <Award className="w-5 h-5" />
               <h2 className="text-xs uppercase tracking-wider font-bold">
-                Skills & Expertise
+                Habilidades & Expertise
               </h2>
             </motion.div>
 
