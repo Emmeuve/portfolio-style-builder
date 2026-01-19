@@ -43,6 +43,9 @@ const Header = () => {
           <a href="#services" className="hover:text-foreground transition-colors">
             SERVICES
           </a>
+          <Link to="/resume" className="hover:text-foreground transition-colors">
+            RESUME
+          </Link>
         </nav>
 
         <div className="text-right space-y-1">
