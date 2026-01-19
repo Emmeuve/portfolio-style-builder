@@ -26,8 +26,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-background/80 backdrop-blur-sm">
       <div className="flex items-start justify-between text-xs uppercase tracking-wider">
         <div className="space-y-1">
-          <Link to="/" className="font-bold hover:text-muted-foreground transition-colors">STUDIO NAME</Link>
-          <p className="text-muted-foreground">DESIGN & BRANDING</p>
+          <Link to="/" className="font-bold hover:text-muted-foreground transition-colors">ESTUDIO EMMEUVE</Link>
+          <p className="text-muted-foreground">DISEÑO & BRANDING</p>
           <p className="text-muted-foreground">
             {formatDay(currentTime)} {formatTime(currentTime)}
           </p>
@@ -53,9 +53,9 @@ const Header = () => {
             to="/contact"
             className="font-bold hover:text-muted-foreground transition-colors block"
           >
-            CONTACT
+            CONTACTO
           </Link>
-          <p className="text-muted-foreground">AVAILABLE FOR PROJECTS</p>
+          <p className="text-muted-foreground">DISPONIBLE PARA PROYECTOS</p>
         </div>
       </div>
     </header>
